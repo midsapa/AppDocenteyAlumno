@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color=#78ffd6>
+
+  <ion-grid class="ion-padding ion-margin"  class="background-image">
+    <ion-row class="ion-margin ion-padding-vertical">
+      <ion-col>
+        <ion-item class="border-rounded" >
+          <ion-label position="floating">Usuario:</ion-label>
+          <ion-input type="text" [(ngModel)]="username" placeholder="Usuario"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin ion-padding-vertical">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Contraseña:</ion-label>
+          <ion-input type="password" [(ngModel)]="password" value="Contraseña"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin ion-padding-vertical">
+      <ion-col>
+        <ion-button class="ion-margin-top" color="success" shape="round" expand="block" (click)="prosesLogin()">Iniciar Sesión</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="ion-margin-top" color="danger" shape="round" expand="block" fill="solid" (click)="formRegister()">Registrate</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

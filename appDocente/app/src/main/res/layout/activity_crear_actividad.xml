@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="com.pari.docente.Cursos">
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREAR ACTIVIDAD"
+            android:textColor="#F7F6FA" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F7F6FA"
+            android:text="CREAR NUEVO TEMA" />
+
+        <Button
+            android:id="@+id/btnnuevotema23"
+            android:layout_width="135dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:background="@drawable/botones"
+            android:text="NUEVO TEMA" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F7F6FA"
+            android:text="CREAR NUEVA TAREA" />
+
+        <Button
+            android:id="@+id/btnnuevatarea"
+            android:layout_width="135dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:background="@drawable/botones"
+            android:text="NUEVA TAREA" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GrupoClases"
+    android:id="@+id/fragclases_cg"
+    android:background="#052D7C"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="451dp"
+        android:layout_marginTop="50dp"
+        android:background="#007991"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CREAR GRUPOS DE CLASES"
+            android:textColor="#F7F8F6F6"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nombre de la clase"
+            android:textColor="#F7F8F6F6"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtnombreClase_cg"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Seccion"
+            android:textColor="#F7F8F6F6"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtseccion_cg"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Asunto"
+            android:textColor="#F7F8F6F6"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtasunto_cg"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:alignmentMode="alignMargins"
+           android:orientation="horizontal"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/btnGuardarGruposnew"
+                android:layout_width="156dp"
+                android:layout_height="61dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/botones"
+                android:text="GUARDAR"
+                android:textColor="#F7F8F6F6" />
+
+            <Button
+                android:id="@+id/btnAtrasgruposnew"
+                android:layout_width="156dp"
+                android:layout_height="61dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/botones"
+                android:text="ATRAS"
+                android:textColor="#F7F8F6F6" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

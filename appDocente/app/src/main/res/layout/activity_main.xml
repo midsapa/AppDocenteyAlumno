@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:background="#78ffd6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#007991"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/aclonica"
+            android:text="INICIAR SESIÓN"
+            android:textAlignment="center"
+            android:textColor="#F7F6FA"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="Usuario o Correo"
+            android:textSize="17dp"
+            android:textColor="#F7F6FA" />
+
+        <EditText
+            android:id="@+id/correologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_light_background"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="17dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#F7F6FA" />
+
+        <EditText
+            android:id="@+id/contraseñalogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recordarme"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#F7F6FA" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/entrarlogin"
+            android:layout_width="147dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/botones"
+            android:text="Entrar"
+            android:textColor="#F7FCF7F7"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/cre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#F7F6FA"
+            android:fontFamily="@font/aclonica"
+            android:text="¿No tienes una cuenta?" />
+
+        <Button
+            android:id="@+id/crearcuentalogin"
+            android:layout_width="147dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/botones"
+            android:text="Crear"
+            android:textColor="#F7FCF7F7"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <EditText
+            android:id="@+id/olvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#F7F6FA"
+            android:text="¿Olvidaste tu contraseña?" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

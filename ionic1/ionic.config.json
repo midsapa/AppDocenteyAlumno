@@ -1,0 +1,8 @@
+{
+  "name": "clases",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

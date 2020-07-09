@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Tema">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:layout_marginTop="130dp"
+        android:background="#007991"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txttema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="AGREGAR TEMA"
+            android:textColor="#F7F8F6F6"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tema"
+            android:textColor="#F7F8F6F6"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edttema23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/btncreartema23"
+                android:layout_width="89dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/botones"
+                android:text="CREAR" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="89dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/botones"
+                android:text="CANCELAR" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

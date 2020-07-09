@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="10">
+        <ion-title>BUSCAR GRUPOS</ion-title>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button (click)="close()" color="danger" size="small">
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-col>
+    <ion-list class="tabla_cont">
+      <ion-card>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="10">
+                <ion-input type="text" placeholder="Nombre del grupo" [(ngModel)]="lesson_name"> </ion-input>
+              </ion-col>
+              <ion-col size="2"> 
+                <ion-button color="warning" (click)="searchLesson()">
+                  <ion-icon name="search"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>          
+          </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ion-col>
+
+  <ion-list class="tabla_responsive">
+
+    <ion-card class="ion-margin-bottom" *ngFor="let grupo of LessonSearch">
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="3">
+            <IonCardTitle>{{grupo.docente}}</IonCardTitle>
+          </ion-col>
+          <ion-col size="7">
+            <IonCardTitle>{{grupo.lesson_name}}</IonCardTitle>
+          </ion-col>
+          <ion-col size="2"> 
+            <ion-button color="success" size="small" (click)="registerToLesson(grupo.id)">
+              <ion-icon name="add-circle-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>          
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+
+</ion-content>

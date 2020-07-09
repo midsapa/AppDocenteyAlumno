@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>GRUPOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-col >
+    <div class="ion-text-center">
+      <IonCardTitle >Bienvenido <strong>{{student_user}}</strong> estos son los grupos a los que te has unido</IonCardTitle>
+    </div>
+ 
+    <ion-list class="tabla_responsive">
+
+      <ion-card class="ion-margin-bottom" *ngFor="let grupo of Lessons">
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="10" class="ion-padding-vertical">
+              <IonCardTitle>{{grupo.lesson_name}}</IonCardTitle>
+            </ion-col>
+            <ion-col size="2" class="ion-padding-vertical"> 
+              <ion-button color="success" (click)="seeTopics(grupo.id)">
+                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>          
+        </ion-card-content>
+      </ion-card>
+
+    </ion-list>
+    <ion-list class="tabla_button">
+    <ion-button color="warning" class="ion-center" (click)="presentModal()">
+      <IonButton color="warning" >Unirme</IonButton>
+    </ion-button>
+    </ion-list>
+  </ion-col>
+
+</ion-content>

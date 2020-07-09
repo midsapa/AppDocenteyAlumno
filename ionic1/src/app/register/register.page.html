@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image">
+
+  <ion-grid class="ion-padding ion-margin">
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Usuario:</ion-label>
+          <ion-input type="text" [(ngModel)]="username" placeholder="Usuario"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Nombre completo:</ion-label>
+          <ion-input type="text" [(ngModel)]="fullname" placeholder="Nombre completo"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Correo:</ion-label>
+          <ion-input type="text" [(ngModel)]="email" placeholder="Correo"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Celular:</ion-label>
+          <ion-input type="text" [(ngModel)]="cellphone" placeholder="Celular"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Contraseña:</ion-label>
+          <ion-input type="password" [(ngModel)]="password" value="Contraseña"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-item class="border-rounded">
+          <ion-label position="floating">Confirmar Contraseña:</ion-label>
+          <ion-input type="password" [(ngModel)]="confirm_password" value="Contraseña"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col>
+        <ion-button class="ion-margin-top" color="success" shape="round" expand="block" (click)="prosesRegister()">Registrarse</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="ion-margin-top" color="danger" shape="round" expand="block" fill="solid" (click)="formLogin()">Iniciar Sesión</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

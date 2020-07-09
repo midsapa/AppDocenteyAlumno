@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8652E2"
+    android:id="@+id/agregartarea1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.pari.docente.fragment_agregartarea">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="680dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="581dp"
+            android:layout_marginTop="20dp"
+
+            android:background="#007991"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="AGREGAR TAREA"
+                android:textColor="#F7F8F6F6"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Título"
+                android:textColor="#F7F8F6F6"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtTitulotarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Instrucciones"
+                android:textColor="#F7F8F6F6"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtInstrucciones"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_weight="1" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="71dp"
+                android:layout_height="61dp"
+                android:layout_weight="1"
+                android:background="@drawable/subir_archivo" />
+
+            android:text="Button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="146dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Puntos:"
+                    android:textColor="#F7F8F6F6"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtpuntos"
+                    android:layout_width="421dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#F7F8F6F6"
+                android:textSize="18sp"
+                android:text="Fecha de Entrega" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnfechatarea"
+                    android:layout_width="0dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_baseline_date_range_24" />
+
+                <EditText
+                    android:id="@+id/edtfechatarea"
+                    android:layout_width="250dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="#EEF1EBEB" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#F7F8F6F6"
+                android:textSize="18sp"
+                android:text="Tema:" />
+
+            <Spinner
+                android:id="@+id/spiTema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_weight="1" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="2"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+                <Button
+                    android:id="@+id/btnguarfarTarea"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/botones"
+
+                    android:text="GUARDAR"
+                    android:textColor="#F7F8F6F6" />
+
+                <Button
+                    android:id="@+id/btnCancelartarea"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@drawable/botones"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="CANCELAR"
+                    android:textColor="#F7F8F6F6" />
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gruposdeclases"
+    tools:context="com.pari.docente.Gruposdeclases">
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#052D7C"
+    tools:context=".Gruposdeclases">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GRUPOS DE CLASES"
+        android:textAlignment="center"
+        android:textColor="#F8F8F7F7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:layout_gravity="center"
+        android:columnOrderPreserved="false"
+        android:background="#78ffd6"
+        android:padding="16dp"
+        android:rowCount="1">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="#164093"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/clases" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Grupo 1"
+                        android:textAlignment="center"
+                        android:textColor="#FDF8F8F8"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="#164093"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/clases" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Grupo 2"
+                        android:textAlignment="center"
+                        android:textColor="#FDF8F8F8"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/regrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:clickable="true"
+        android:columnCount="2"
+        android:horizontalSpacing="12dp"
+        android:padding="14dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btncreargrupo"
+            android:layout_width="120dp"
+            android:layout_height="61dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/botones"
+
+            android:text="CREAR"
+            android:textColor="#F7FCF7F7" />
+
+        <Button
+            android:id="@+id/btnunirse"
+            android:layout_width="120dp"
+            android:layout_height="61dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/botones"
+
+            android:text="ENTRAR"
+            android:textColor="#F7FCF7F7" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</FrameLayout>
