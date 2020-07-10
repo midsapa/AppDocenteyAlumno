@@ -1,8 +1,8 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar style="--background:#066D8B ;">
     <ion-row>
       <ion-col size="10">
-        <ion-title>DETALLE DE LOS TRABAJOS</ion-title>
+        <ion-title style="--color:#ffffff ;">DETALLE DE LOS TRABAJOS</ion-title>
       </ion-col>
       <ion-col size="2">
         <ion-button (click)="close()" color="danger" size="small">
@@ -13,9 +13,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="--background:#62d3c9;">
 
-  <ion-card class="ion-margin-bottom" *ngFor="let trabajo of HomeworkSearch">
+  <ion-card style="--background:#309191;--color:#ffffff;" class="ion-margin-bottom" *ngFor="let trabajo of HomeworkSearch">
     <ion-card-content>
       <ion-row>
         <ion-col size="4" class="ion-padding-vertical">
@@ -62,8 +62,8 @@
         </ion-col>
       </ion-row>          
     </ion-card-content>
-    <ion-button (click)="subir()">subir</ion-button>
-  <ion-button (click)="getPicture()">Capturar</ion-button>
+    <ion-button style="--background:#c4a01e;" (click)="subir()">subir</ion-button>
+  <ion-button style="--background:#6FA84B ;" (click)="getPicture()">Capturar</ion-button>
   </ion-card>
   
 </ion-content>

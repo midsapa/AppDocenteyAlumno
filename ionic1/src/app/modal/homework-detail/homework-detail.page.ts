@@ -63,7 +63,7 @@ export class HomeworkDetailPage implements OnInit {
       //this.imagenes = `data:image/jpeg;base64,${imageData}`;
       this.imagenes = `${imageData}`;
 
-      alert(this.imagenes);
+      alert("Imagen capturada");
       
       
     })
@@ -72,7 +72,7 @@ export class HomeworkDetailPage implements OnInit {
     });
   }
   subir(){
-    alert('mostrar:'+this.imagenes);
+    
     let body = {
       file: this.imagenes,
       aksi: 'subimg'
@@ -81,7 +81,7 @@ export class HomeworkDetailPage implements OnInit {
       var alertmsg = data.msg;
       if(data.success){
         const toast = await this.toastController.create({
-          message: "Bienvenido " + data.result,
+          message: "archivo enviado",
           duration: 2000
         });
         toast.present();
