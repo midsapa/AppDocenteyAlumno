@@ -74,6 +74,8 @@ export class HomeworkDetailPage implements OnInit {
   subir(){
     
     let body = {
+      user_id: this.student_id,
+      homework_id: this.homework_id,
       file: this.imagenes,
       aksi: 'subimg'
     };
