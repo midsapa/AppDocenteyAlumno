@@ -13,15 +13,17 @@ import com.google.android.material.tabs.TabItem;
 
 public class Cursos extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnnuevoact;
+    Button btnnuevoact, btnperson;
+    TabItem personas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cursos);
         btnnuevoact = findViewById(R.id.btniractividad);
-
         btnnuevoact.setOnClickListener(this);
+        btnperson=findViewById(R.id.btnPersonas);
+        btnperson.setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,10 @@ public class Cursos extends AppCompatActivity implements View.OnClickListener {
                 startActivity(j);
                 break;
 
+            case R.id.btnPersonas:
+                Intent i = new Intent(this, listarusers.class);
+                startActivity(i);
+                break;
         }
     }
 

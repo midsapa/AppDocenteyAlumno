@@ -57,7 +57,7 @@ public class GrupoClases extends Fragment {
         guardargrupos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                servicio("http://192.168.0.25:80/bddocente/Grupos_Clases.php");
+                servicio("http://farmaciafarmax.net/clases/services/docente/lessons.php");
             }
         });
         atarsgrupos=view.findViewById(R.id.btnAtrasgruposnew);
@@ -89,10 +89,10 @@ public class GrupoClases extends Fragment {
            @Override
            protected Map<String, String> getParams() throws AuthFailureError {
                Map<String,String>parametros=new HashMap<String,String>();
-               parametros.put("Nombre_Clase",nombreclase.getText().toString());
-               parametros.put("Seccion",seccion.getText().toString());
-               parametros.put("Asunto",asunto.getText().toString());
-               parametros.put("usuario_name",usr_name);
+               parametros.put("lesson_name",nombreclase.getText().toString());
+               //parametros.put("Seccion",seccion.getText().toString());
+               //parametros.put("Asunto",asunto.getText().toString());
+               parametros.put("username",usr_name);
 
                return parametros;
            }

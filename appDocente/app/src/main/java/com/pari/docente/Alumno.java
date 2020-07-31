@@ -47,7 +47,7 @@ public class Alumno extends AppCompatActivity {
                 if (!validarEmail(txtcorreo.getText().toString())){
                     Toast.makeText(getApplicationContext(),"Correo inválido.",Toast.LENGTH_SHORT).show();
                 }else{
-                    ejecutar("http://192.168.0.25:80/bddocente/registro_Usuario.php");
+                    ejecutar("http://farmaciafarmax.net/clases/services/proses-api.php");
                 }
             }
         });
@@ -74,11 +74,11 @@ public class Alumno extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros=new HashMap<String, String>();
-                parametros.put("nombre",txtNombre.getText().toString());
-                parametros.put("Usuario",txtUsuario.getText().toString());
-                parametros.put("correo",txtcorreo.getText().toString());
-                parametros.put("celular",txtcelular.getText().toString());
-                parametros.put("password",txtpassword.getText().toString());
+                parametros.put("fullname",txtNombre.getText().toString());
+                parametros.put("username",txtUsuario.getText().toString());
+                parametros.put("email",txtcorreo.getText().toString());
+                parametros.put("teléfono",txtcelular.getText().toString());
+                parametros.put("contraseña",txtpassword.getText().toString());
                 return parametros;
             }
         };

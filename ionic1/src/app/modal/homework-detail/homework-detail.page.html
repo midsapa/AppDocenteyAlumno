@@ -15,7 +15,7 @@
 
 <ion-content style="--background:#62d3c9;">
 
-  <ion-card style="--background:#309191;--color:#ffffff;" class="ion-margin-bottom" *ngFor="let trabajo of HomeworkSearch">
+  <ion-card style="--background:#155252;--color:#ffffff;" class="ion-margin-bottom" *ngFor="let trabajo of HomeworkSearch">
     <ion-card-content>
       <ion-row>
         <ion-col size="4" class="ion-padding-vertical">
@@ -62,8 +62,33 @@
         </ion-col>
       </ion-row>          
     </ion-card-content>
+    <ion-col >
     <ion-button style="--background:#c4a01e;" (click)="subir()">subir</ion-button>
-  <ion-button style="--background:#6FA84B ;" (click)="getPicture()">Capturar</ion-button>
-  </ion-card>
+    <ion-button style="--background:#6FA84B ;" (click)="getPicture()">Capturar</ion-button>
+</ion-col>
+
+
+<ion-row>
+  <ion-col>
+    <ion-item class="border-rounded" style="--background:#155252 ;">
+      <ion-label style="--color:#ffffff ;" position="floating">Comentario:</ion-label>
+      <ion-input type="text" [(ngModel)]="description"value=" "></ion-input>
+    </ion-item>
+    <ion-button style="--background:#7af076;" (click)="ec()">enviar2</ion-button>
+  </ion-col>
+</ion-row>
+</ion-card>
+
+  <ion-card style="--background:#4bbb63;--color:#ffffff;" class="ion-margin-bottom" *ngFor="let val of Points">
+      <ion-row>
+        <ion-col size="4" class="ion-padding-vertical">
+          <IonCardTitle>Nota obtenida:</IonCardTitle>
+        </ion-col>
+        <ion-col size="8" class="ion-padding-vertical">
+          <IonCardTitle>{{val.points}}</IonCardTitle>
+        </ion-col>
+      </ion-row>    
+
+    </ion-card>
   
 </ion-content>

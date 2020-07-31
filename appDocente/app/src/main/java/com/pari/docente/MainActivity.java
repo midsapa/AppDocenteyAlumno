@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (txtcontraseña.getText().toString().length()<1 || txtcorreo.getText().toString().length()<1){
                 Toast.makeText(MainActivity.this, "Campo contraseña o correo vacio", Toast.LENGTH_SHORT).show();
                 }else{
-                validarUsuario("http://192.168.0.25:80/bddocente/validar_usuario.php");
+                validarUsuario("http://farmaciafarmax.net/clases/services/login2.php");
                 }
 
             break;
@@ -75,14 +75,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         StringRequest stringRequest=new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if (response.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Usuario o contraseña incorrecta ", Toast.LENGTH_SHORT).show();
-                } else {
-                    guardarPreferencias(txtcorreo.getText().toString());
-                    Toast.makeText(MainActivity.this, "bienvenido :) ", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), fragments.class);
+                if (!response.isEmpty()){
 
-                    startActivity(intent);
+                    String string = response;
+                    String[] parts = string.split("//");
+                    String part1 = parts[0];
+                    String part2 = parts[1];
+                    String part3 = parts[2];
+
+                    if (part1.length()>2){
+                        guardarPreferencias(part3);
+                        Toast.makeText(MainActivity.this,"Bienvenido: "+part3,Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(),fragments.class);
+                        startActivity(i);
+                    }else{
+                        Toast.makeText(MainActivity.this,"Credenciales inválidas2!",Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(MainActivity.this,"Credenciales inválidas!",Toast.LENGTH_SHORT).show();
                 }
             }
         },new Response.ErrorListener(){
@@ -94,8 +104,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             protected Map<String,String>getParams()throws AuthFailureError{
                 Map<String,String>parametro=new HashMap<String,String>();
-                parametro.put("password",txtcontraseña.getText().toString());
-                parametro.put("correo",txtcorreo.getText().toString());
+                parametro.put("usr",txtcorreo.getText().toString());
+                parametro.put("pwd",txtcontraseña.getText().toString());
                 return parametro;
             }
         };
@@ -106,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void guardarPreferencias(String usr_nombre){
         SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("usr_nombre",usr_nombre);
+        editor.putString("username",usr_nombre);
         editor.commit();
         Toast.makeText(MainActivity.this,"Credenciales guardadas!",Toast.LENGTH_SHORT).show();
     }

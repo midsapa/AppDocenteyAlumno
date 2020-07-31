@@ -44,7 +44,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Gruposdeclases extends Fragment  implements  Response.Listener<JSONObject>,Response.ErrorListener{
-    private static final String url_curs="http://192.168.0.25/bddocente/Mostrardatos.php";
+    private static final String url_curs="http://farmaciafarmax.net/clases/services/lessons.php";
     //private static final String user="root";
     //private static final String pass="";
     List<modelocursos>modelocursosList;

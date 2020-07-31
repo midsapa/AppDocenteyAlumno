@@ -15,6 +15,8 @@ export class CreateLessonPage implements OnInit {
   @Input() student_id_modal: any;
   LessonSearch = new Array();
   lesson_name: string = "";
+  lesson_section:string="";
+  lesson_affair:string="";
   constructor(
     public modalController: ModalController,
     public apiService: ApiService,

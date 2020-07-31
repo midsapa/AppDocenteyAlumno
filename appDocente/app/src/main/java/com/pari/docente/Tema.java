@@ -36,7 +36,7 @@ public class Tema extends Fragment {
         btncreartema.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                servicio("http://192.168.0.25:80/bddocente/crear_tema.php");
+                servicio("http://farmaciafarmax.net/clases/services/docente/topics.php");
             }
         });
         return view;
@@ -56,7 +56,7 @@ public class Tema extends Fragment {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String>parametros=new HashMap<String,String>();
-                parametros.put("nombre_tema",nombre_tema.getText().toString());
+                parametros.put("topicname",nombre_tema.getText().toString());
                 return parametros;
             }
         };
